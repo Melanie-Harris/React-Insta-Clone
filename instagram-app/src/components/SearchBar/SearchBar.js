@@ -1,5 +1,20 @@
 import React from 'react';
-import './App.css';
+
+class SearchBar extends React.Component{
+    render(){
+        return(
+            <div className="searchBar">
+                <h1>| Instagram</h1>
+            <input
+            type="text"
+            name="search"
+            placeholder="search"
+            // onChange=
+            />
+            </div>
+        )
+    }
+}
 
 
 
