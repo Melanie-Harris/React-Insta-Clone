@@ -1,0 +1,22 @@
+.instaButtons {
+    width: 10px;
+    display: flex;
+}
+
+.heart {
+    padding: 0px 0px 0px 15px;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.timeStamp {
+    color: grey;
+    font-size: 10px;
+}
+
+.commentInput {
+    width: 98%;
+    border-top: 1px solid lightgrey;
+}

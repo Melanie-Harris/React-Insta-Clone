@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-// import CommentSection from './components/CommentSection/CommentSection';
+import '/Users/melanieharris/Desktop/LS/week7/React-Insta-Clone/instagram-app/src/components/CommentSection/CommentSection.css';
+import '/Users/melanieharris/Desktop/LS/week7/React-Insta-Clone/instagram-app/src/components/PostContainer/PostContainer.css';
+import '/Users/melanieharris/Desktop/LS/week7/React-Insta-Clone/instagram-app/src/components/SearchBar/SearchBar.css'
 import PostContainer from './components/PostContainer/PostContainer';
-// import PropTypes from 'prop-types';
 import dummyData from './dummy-data';
 import SearchBar from './components/SearchBar/SearchBar';
 
@@ -12,6 +13,10 @@ class App extends React.Component {
     this.state = {
       data: dummyData
     };
+  }
+
+  componentDidMount(){
+    this.setState({dumbData:dummyData})
   }
 
   render() {

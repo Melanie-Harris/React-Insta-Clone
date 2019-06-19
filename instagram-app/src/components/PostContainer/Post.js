@@ -14,7 +14,7 @@ console.log(props.post.imageUrl)
         
             <img
                 alt=""
-                className=""
+                className="postImg"
                 src={props.post.imageUrl} 
                 />
             {/* <Comment /> */}
