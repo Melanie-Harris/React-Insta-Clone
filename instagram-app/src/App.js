@@ -11,19 +11,35 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: dummyData
+      data: [],
+      search: ''
     };
   }
 
+
+searchInputHandler = e => {
+  console.log(e.target.name)
+    this.setState=({
+        search: e.target.value
+    })
+  } 
+
   componentDidMount(){
-    this.setState({dumbData:dummyData})
+    this.setState({data:dummyData})
   }
 
+
   render() {
+    console.log(this.state.searchBar)
     return (
       <>
-        <SearchBar />
-        < PostContainer dummy={this.state.data}/>
+      
+        <SearchBar 
+        searchHandler={this.searchInputHandler} 
+        value={this.state.search}/>
+
+        <PostContainer 
+        dummy={this.state.data}/>
         <h1> test</h1>
       </>
     )
@@ -31,3 +47,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+//search onclick doesnt work
